@@ -13,7 +13,7 @@ document.getElementById("signatureForm").addEventListener("submit", async (e) =>
     showToast("📄 Génération du PDF en cours...", "info");
 
     try {
-      const response = await fetch("http://localhost:3001/submit", {
+      const response = await fetch("https://signature-accord-duck23.onrender.com", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

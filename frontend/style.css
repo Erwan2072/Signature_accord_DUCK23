@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f0f4f7;
+  color: #333;
+}
+
+.container {
+  max-width: 640px;
+  margin: 2rem auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
+.form-logo {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.form-logo img {
+  width: 100px;
+  max-width: 50%;
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.6rem;
+  color: #003366;
+  margin-bottom: 1.5rem;
+}
+
+ul {
+  padding-left: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+}
+
+ul li a {
+  color: #0099b1;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  text-decoration: underline;
+}
+
+form label {
+  display: block;
+  margin-bottom: 1.25rem;
+  font-weight: 600;
+}
+
+input {
+  width: 100%;
+  padding: 0.65rem;
+  margin-top: 0.25rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+button {
+  display: inline-block;
+  width: 100%;
+  background-color: #0099b1;
+  color: white;
+  border: none;
+  padding: 0.85rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+button:hover {
+  background-color: #007c91;
+}
+
+.toast {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-weight: bold;
+  z-index: 1000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+}
+
+.toast.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.toast.success {
+  background-color: #28a745;
+}
+
+.toast.error {
+  background-color: #dc3545;
+}
+
+.toast.info {
+  background-color: #007acc;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    margin: 1rem;
+    padding: 1.25rem;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  .form-logo img {
+    width: 80px;
+  }
+
+  ul {
+    padding-left: 1rem;
+  }
+
+  button {
+    font-size: 1rem;
+  }
+}
+
+.document-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
+  .document-links a {
+    display: inline-block;
+    background-color: #0099b1;
+    color: white;
+    text-decoration: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    text-align: center;
+  }
+
+  .document-links a:hover {
+    background-color: #007c91;
+  }
+
+  @media screen and (max-width: 600px) {
+    .document-links a {
+      flex: 1 1 100%;
+    }
+  }
+
+  .pdf-viewer {
+    margin-top: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 6px rgba(0,0,0,0.1);
+  }

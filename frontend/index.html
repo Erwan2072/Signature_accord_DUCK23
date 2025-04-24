@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Adhésion DUCK23</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="form-logo">
+        <img src="../docs/logo-duck23.png" alt="Logo Duck23" />
+      </div>
+    <h1>Adhésion à l'association DUCK23</h1>
+    <p>Merci de lire les documents suivants avant de signer :</p>
+    <div class="document-links">
+        <a href="https://drive.google.com/file/d/1xFrvtTosOHEMRXxO3mo6CBLebVtxHZ3l/view?usp=sharing" target="_blank">Règlement Discord</a>
+        <a href="https://drive.google.com/file/d/1m569jFi-gLdqe5bS9HDTIqHtPwQrvkMJ/view?usp=sharing" target="_blank">Règlement intérieur</a>
+        <a href="https://drive.google.com/file/d/1kprITwOsWqCwmmakXuWEYCoaHUrh76H6/view?usp=sharing" target="_blank">Charte de Confidentialité Générale</a>
+        <a href="https://drive.google.com/file/d/1gQx71VAnoRhCF6Hg26nt64bQRAfBqouU/view?usp=sharing" target="_blank">Politique de Confidentialité</a>
+        <a href="https://drive.google.com/file/d/1g6PcgsrSTnHOJDxRTv6_S626lrc8WWfD/view?usp=sharing" target="_blank">Charte de Confidentialité Projet</a>
+      </div>
+
+      <embed
+      src="../docs/déclaration d'accord des documents DUCK23.pdf#toolbar=0&navpanes=0&scrollbar=1"
+      type="application/pdf"
+      width="100%"
+      height="450px"
+    />
+
+    <form id="signatureForm">
+      <label for="firstname">Prénom :
+        <input type="text" id="firstname" name="firstname" required />
+      </label>
+      <label for="lastname">Nom :
+        <input type="text" id="lastname" name="lastname" required />
+      </label>
+      <label for="discord">Pseudonyme discord :
+        <input type="text" id="discord" name="discord" required />
+      </label>
+      <label for="email">Email :
+        <input type="email" id="email" name="email" required />
+      </label>
+      <label for="city">Fait à :
+        <input type="text" id="city" name="city" required />
+      </label>
+      <label for="date">Date :
+        <input type="date" id="date" name="date" required />
+      </label>
+
+
+      <button type="submit">📥 Je signe mon engagement</button>
+    </form>
+  </div>
+
+  <div id="toast" class="toast hidden">...</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
